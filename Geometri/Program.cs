@@ -17,7 +17,7 @@ namespace Geometri
                 new Triangle(3, 4)
             };
 
-            //Shows in the console app all the shapes in the list "shapes".
+            //displays in the console all the results from shape in the list "shapes".
             foreach (Shape shape in shapes)
             {
                 Console.WriteLine(shape.ToString());

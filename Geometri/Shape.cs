@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Geometri
+﻿namespace Geometri
 {
     abstract class Shape
     {
@@ -21,8 +15,13 @@ namespace Geometri
         public double SideB { get { return sideB; } set { sideB = value; } }
 
         public double SideC { get { return sideC; } set { sideC = value; } }
-        
+
         public double SideD { get { return sideD; } set { sideD = value; } }
+
+        /* Debating whether if i should add constructors 
+         * for all shapes and sides here or let all the 
+         * different sides be included in their own class
+         * constructor if it's needed */
 
         //Constructor used for square or shapes with all equal sides
         protected Shape(double sideA)
@@ -35,7 +34,7 @@ namespace Geometri
         {
             this.SideB = sideB;
         }
-        
+
         //Constructor used for shapes with two pairs of matching sides and an angle
         protected Shape(double sideA, double sideB, double angle) : this(sideA, sideB)
         {
@@ -53,7 +52,7 @@ namespace Geometri
 
         public abstract double Circumference();
 
-        //Override ToString in Shape to avoid repeated code in other classes
+        //Override ToString in Shape to display the results of area and circumference of the shapes
         public override string ToString()
         {
             return GetType().Name + "\nArea: " + Area()

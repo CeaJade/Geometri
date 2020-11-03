@@ -14,13 +14,13 @@ namespace Geometri
         {
         }
 
-
+        //Calculate area of the parallelogram
         public override double Area()
         {
             return Math.Round((sideA * sideB * Math.Sin((Math.PI / 180) * angle)), 2);
         }
 
-
+        //Calculate circumference of the parallelogram
         public override double Circumference()
         {
             return (sideA * 2 + sideB * 2);

@@ -13,12 +13,13 @@ namespace Geometri
         {
         }
 
+        //Calculate circumference of the rectangle
         public override double Circumference()
         {
             return (sideA * 2 + sideB * 2);
         }
 
-        //Calculate area 
+        //Calculate area of the rectangle
         public override double Area()
         {
             return Math.Round((sideA * sideB), 2);

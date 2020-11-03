@@ -33,6 +33,7 @@ namespace Geometri
             return (sideA + sideB + sideC + sideD);
         }
 
+        //Add height to the result in string to the superclass
         public override string ToString()
         {
             return base.ToString() + "Height: " + Height() + "\n";
